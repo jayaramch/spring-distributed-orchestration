@@ -11,6 +11,10 @@ public class PodDetails implements Serializable {
 	private String event;
 	private String message;
 
+	private String podName;
+	private String podStatus;
+	private String ipAddress;
+
 	public Integer getPort() {
 		return port;
 	}
@@ -41,6 +45,30 @@ public class PodDetails implements Serializable {
 
 	public void setMessage(String message) {
 		this.message = message;
+	}
+
+	public String getPodName() {
+		return podName;
+	}
+
+	public void setPodName(String podName) {
+		this.podName = podName;
+	}
+
+	public String getPodStatus() {
+		return podStatus;
+	}
+
+	public void setPodStatus(String podStatus) {
+		this.podStatus = podStatus;
+	}
+
+	public String getIpAddress() {
+		return ipAddress;
+	}
+
+	public void setIpAddress(String ipAddress) {
+		this.ipAddress = ipAddress;
 	}
 
 }

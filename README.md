@@ -52,7 +52,7 @@ This would start Kafka and zookeper with localhost 6092 and 2181 ports
 
 ## Docker commands
 
-docker-compose up -d /n
+docker-compose up -d
 docker-compose down 
 
 docker exec -it kafka-kafka-1 bash
