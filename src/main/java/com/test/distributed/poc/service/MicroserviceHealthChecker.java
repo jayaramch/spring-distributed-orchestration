@@ -30,7 +30,7 @@ public class MicroserviceHealthChecker {
 	@Autowired
 	private KafkaProducer kafkaProducer;
 
-	@Scheduled(fixedDelay = 10000)
+	//@Scheduled(fixedDelay = 10000)
 	public void checkHealth() {
 		MockDBUtils mockDBUtils = mockDBService.getDBMock();
 		if (mockDBUtils != null && mockDBService.getDBMock().isPodStarted()) {

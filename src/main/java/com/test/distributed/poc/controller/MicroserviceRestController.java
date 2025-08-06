@@ -93,7 +93,7 @@ public class MicroserviceRestController {
 
 			clusterRepository.save(servicesDetails);
 
-			return "Child service started on port " + port;
+			return "Child service started ";
 		} catch (IOException e) {
 			return "Failed to start child service: " + e.getMessage();
 		}
